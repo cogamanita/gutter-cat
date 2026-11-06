@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>GUTTER CAT</title>
+    <link rel="icon" href="data:," />
+    <meta name="description" content="A 16-bit style survival horror RPG about a stray cat trying to get home." />
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: #050506;
+        overflow: hidden;
+      }
+      #game {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #game canvas {
+        display: block;
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

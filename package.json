@@ -1,0 +1,19 @@
+{
+  "name": "gutter-cat",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GUTTER CAT - a 16-bit style survival horror RPG about a stray cat trying to get home.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test tests/"
+  },
+  "dependencies": {
+    "phaser": "^3.90.0"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  }
+}
