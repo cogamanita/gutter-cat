@@ -9,7 +9,7 @@ all sound and music. There are no image or audio files to download.
 
 ## Run it
 
-You need [Node.js](https://nodejs.org) 20 or newer. On Windows you can install it with:
+You need [Node.js](https://nodejs.org) 20.19 or newer. On Windows you can install it with:
 
 ```
 winget install OpenJS.NodeJS.LTS
@@ -32,6 +32,14 @@ The game opens in your browser (normally at http://localhost:5173).
 | `npm test` | Runs the rules, map and balance tests |
 
 `dist/index.html` needs no server: double-click it, or copy that one file anywhere.
+
+## Deploy
+
+The game is a static site, so it needs no server or environment variables. Vercel reads its settings from `vercel.json`: it runs `npm ci` and `npm run build`, then publishes `dist/`.
+
+Push this repo to GitHub, import it at https://vercel.com/new and click Deploy. Every later push to `main` deploys automatically.
+
+Saves live in each player's own browser (localStorage), so they are not shared between devices and survive new deployments as long as the site address stays the same. The game needs a keyboard, so phones and tablets can open it but cannot play it yet.
 
 ## Controls
 
